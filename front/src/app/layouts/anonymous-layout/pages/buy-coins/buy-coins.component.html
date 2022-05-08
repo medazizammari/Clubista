@@ -1,0 +1,41 @@
+<main>
+  <div class="position-relative">
+    <!-- shape Hero -->
+    <section class="section section-lg section-shaped pb-250">
+      <div class="shape shape-style-1 shape-clubisti">
+      </div>
+      <div class="container py-lg-md d-flex">
+        <div class="row">
+          <img class="path" src="assets/img/path3.png"/>
+          <div class="col-md-12">
+            <h1 class="" style="font-size: 50px">
+              Choose the package
+              <span class="" style="color: #1f2251"> that fits your needs </span>
+            </h1>
+          </div>
+        </div>
+      </div>
+      <!-- SVG separator -->
+      <div class="separator separator-bottom separator-skew">
+        <svg x="0" y="0" viewBox="0 0 2560 100" preserveAspectRatio="none" version="1.1" xmlns="http://www.w3.org/2000/svg">
+          <polygon class="fill-lighter" points="2560 0 2560 100 0 100"></polygon>
+        </svg>
+      </div>
+      <div class="float-right" style="margin-right: 50px;">
+        <button class="btn btn-icon" (click)="isLeftVisible = !isLeftVisible">
+          <i class="fas fa-arrow-alt-circle-right text-xl"></i>
+        </button>
+      </div>
+      <div class="float-left" style="margin-left: 50px;">
+        <button class="btn btn-icon" (click)="isLeftVisible = !isLeftVisible">
+          <i class="fas fa-arrow-alt-circle-left text-xl"></i>
+        </button>
+      </div>
+    </section>
+    <!-- 1st Hero Variation -->
+    <app-slide-panel [activePane]="isLeftVisible ? 'left' : 'right'">
+      <div leftPane><app-package></app-package></div>
+      <div rightPane><app-personalized></app-personalized></div>
+    </app-slide-panel>
+  </div>
+</main>
