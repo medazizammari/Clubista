@@ -1,0 +1,2 @@
+# Clubista
+Clubista is a website that enable club supporters to help their club while earning points allowing them to buy tickets or subscriptions in the future. (Not yet implemented) For the sake of transparency, the African Club all donations received by the African Club via this application will be visible through the website. Unfortunately the application is not fully transparent and a fraud might be committed. Also the website is not user friendly as there is no pagination or search to find the rank of a particular user
